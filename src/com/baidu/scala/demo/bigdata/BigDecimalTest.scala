@@ -3,7 +3,11 @@ package com.baidu.scala.demo.bigdata
 import scala.io.Source
 import java.io.File
 
-
+/**
+ * 
+ * test for using git repository
+ * @author wangyuxue@baidu.com
+ * /
 object BigDecimalTest extends App{
     
     val content = Source.fromFile(new File("/Users/odile/Desktop/test"), "utf-8").mkString
