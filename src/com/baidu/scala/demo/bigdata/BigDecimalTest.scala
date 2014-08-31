@@ -11,6 +11,7 @@ object BigDecimalTest extends App{
     
     val content = Source.fromFile(new File("/Users/odile/Desktop/test"), "utf-8").mkString
     val array = content.replace("),", ");").split(";")
+    //transform data
     val tmpArray = array.par.map((x) =>{
         x.replace("(", "").replace(")", "").split(",")
     })
